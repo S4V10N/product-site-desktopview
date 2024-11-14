@@ -1,0 +1,108 @@
+@import
+url(https://fonts.google.com/specimen/Montserrat);
+@import 
+url(https://fonts.google.com/specimen/Fraunces);
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+:root{
+    /* PRIMARY COLORS */
+    --DARKCYAN: hsl(158, 36%, 37%);
+    --CREAM: hsl(30, 38%, 92%);
+    
+    /* NUETRAL COLORS */
+    --VERYDARKBLUE: hsl(212, 21%, 14%);
+    --DARKGRAYISHBLUE: hsl(228, 12%, 48%);
+    --WHITE: hsl(0, 0%, 100%);
+
+    /* TYPOGRAPHY */
+    --FONTSIZE: 14px;
+    --MONTSERRAT: 500,700;
+    --FRAUNCES: 700;
+}
+html{
+    background-color: var(--CREAM);
+    padding: 0.4rem;
+    margin: 0.4rem 0.2rem ;
+}
+
+.wrap{
+    text-wrap: wrap;
+}
+.font{
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.6;
+    letter-spacing: 2px;
+    padding: 1rem 0rem 0rem 1.2rem;
+    text-align: left;
+    color: var(--DARKGRAYISHBLUE);
+    font-size: 1.1rem;
+}
+
+.bold{
+    font-size: 2.6rem;
+    font-family: 'Fraunces',serif;
+    text-align: left;
+    padding: 0.8rem 0rem 0rem 1.2rem;
+}
+
+img{
+    border-radius: 10px 0px 0px 10px;
+    max-width: 100%;
+    padding: 0px;
+    margin: 0px;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    height: 60vh;
+    width: 20vw;
+    background-color: var(--WHITE);
+    border-radius:  0px 10px 10px 0px;
+}
+
+.price{
+    margin-top: 1.2rem;
+    font-size: 2.2rem;
+    font-weight: bold;
+    color: var(--DARKCYAN);
+}
+
+span{
+    font-size: 1rem;
+    text-decoration: line-through;
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: lighter;
+}
+
+.cart{
+    min-height: 50px;
+    width: 280px;
+    background-color: var(--DARKCYAN);
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.tear{
+    display: flex;
+    flex-direction: row;
+    height: 60vh;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
